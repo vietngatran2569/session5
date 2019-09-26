@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn dấu - vào giưa 2 so chan </title>
+</head>
+<body>
+<script>
+    let number=window.prompt();
+    let str=number.toString();
+    let arr=[str[0]];
+    let i=1;
+    for (i;i<str.length;i++){
+        if (str[i-1]%2===0 && str[i]%2===0){
+            arr.push('-',str[i]);
+        }else {
+            arr.push(str[i]);
+        }
+    }
+    document.write(arr.join(''));
+</script>
+</body>
+</html>
